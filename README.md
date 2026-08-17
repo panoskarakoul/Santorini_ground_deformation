@@ -4,7 +4,7 @@
 
 **Course:** GE7090 Advanced Remote Sensing  
 **University:** Stockholm University  
-**Data:** Sentinel-1 Ascending Track 029 + Descending Track 109 — March 2024 to March 2025  
+**Data:** Sentinel-1 Ascending Track 029 + Descending Track 109 - March 2024 to March 2025  
 **Method:** Multi-temporal DInSAR using ASF HyP3 InSAR GAMMA  
 **Reference:** Replicating the InSAR component of Isken et al. (2025), *Nature*, 645(8082)
 
