@@ -9,7 +9,7 @@ from pathlib import Path
 # ─── UPDATE THESE ─────────────────────────────────────────────────────────────
 USERNAME = "your_username_here"
 PASSWORD = "your_password_here"
-ROOT_DIR = r"C:\Projects\Personal_projects\Santorini_Insar"
+ROOT_DIR = r"the_path_you_want_to_save_it"
 
 # ─── SETTINGS ─────────────────────────────────────────────────────────────────
 SETTINGS = {
