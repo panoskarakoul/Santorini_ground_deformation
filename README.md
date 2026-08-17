@@ -69,8 +69,8 @@ Searches the full Sentinel-1 scene for pixels with coherence above 0.5 and calcu
 ### Santorini_analysis.py
 Main analysis script. Performs two computations:
 
-1. **Mean coherence map** — averages all coherence files pixel by pixel, showing where InSAR is reliably coherent throughout the study period.
-2. **Cumulative displacement map** — sums all vertical displacement files with coherence masking (threshold 0.4), showing total ground deformation from March 2024 to March 2025.
+1. **Mean coherence map** - averages all coherence files pixel by pixel, showing where InSAR is reliably coherent throughout the study period.
+2. **Cumulative displacement map** - sums all vertical displacement files with coherence masking (threshold 0.4), showing total ground deformation from March 2024 to March 2025.
 
 Saves GeoTIFF outputs for ArcGIS and PNG figures for reporting.
 
@@ -106,8 +106,8 @@ Saves GeoTIFF outputs for ArcGIS and PNG figures for reporting.
 
 ## Data Sources
 
-- **Sentinel-1 SLC data:** Alaska Satellite Facility (ASF) — search.asf.alaska.edu
-- **InSAR processing:** ASF HyP3 On Demand — hyp3.asf.alaska.edu
+- **Sentinel-1 SLC data:** Alaska Satellite Facility (ASF) - search.asf.alaska.edu
+- **InSAR processing:** ASF HyP3 On Demand - hyp3.asf.alaska.edu
 - **Reference paper:** Isken et al. (2025), *Nature*, DOI: 10.1038/s41586-025-09525-7
 
 ---
@@ -139,22 +139,22 @@ pip install -r requirements.txt
 ## How to Run
 
 ```bash
-# Step 1 — Download ascending data (update credentials first)
+# Step 1  Download ascending data (update credentials first)
 python Data_download_ascending.py
 
-# Step 1b — Download descending data (update credentials first)
+# Step 1b  Download descending data (update credentials first)
 python Data_download_descending.py
 
-# Step 2 — Extract downloaded files
+# Step 2  Extract downloaded files
 python unzip_downloads.py
 
-# Step 3 — Optional diagnostics
+# Step 3  Optional diagnostics
 python check_projection.py
 python Check_coherence.py
 python check_single_pair.py
 python create_AOI_box.py
 
-# Step 4 — Run main analysis
+# Step 4  Run main analysis
 python Santorini_analysis.py
 ```
 
@@ -162,7 +162,7 @@ python Santorini_analysis.py
 
 ## Methodology
 
-Multi-temporal Differential InSAR (DInSAR) was applied to consecutive 12-day Sentinel-1 interferometric pairs covering the Santorini volcanic unrest period of March 2024 to March 2025. Data were processed using the ASF HyP3 InSAR GAMMA cloud platform with parameters matching those of Isken et al. (2025): 10×2 range-azimuth multilooking (~40m resolution), Goldstein adaptive phase filtering (alpha=0.6), topographic phase removal using the Copernicus GLO-90 DEM, and SNAPHU statistical-cost phase unwrapping. Interferometric coherence was assessed for all pairs with pixels below 0.4 masked out before computing the cumulative displacement map.
+Multi-temporal InSAR was applied to consecutive 12-day Sentinel-1 interferometric pairs covering the Santorini volcanic unrest period of March 2024 to March 2025. Data were processed using the ASF HyP3 InSAR GAMMA cloud platform with parameters matching those of Isken et al. (2025): 10×2 range-azimuth multilooking (~40m resolution), Goldstein adaptive phase filtering (alpha=0.6), topographic phase removal using the Copernicus GLO-90 DEM, and SNAPHU statistical-cost phase unwrapping. Interferometric coherence was assessed for all pairs with pixels below 0.4 masked out before computing the cumulative displacement map.
 
 ---
 
