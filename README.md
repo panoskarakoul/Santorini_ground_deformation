@@ -45,7 +45,7 @@ Connects to ASF, searches for all Sentinel-1 SLC scenes over Santorini on ascend
 **Run first for ascending data.**
 
 ### Data_download_descending.py
-Identical to the ascending script — only the flight direction (DESCENDING), relative orbit (109), and output folders differ. Results saved to `hyp3_results_descending/`.
+Identical to the ascending script - only the flight direction (DESCENDING), relative orbit (109), and output folders differ. Results saved to `hyp3_results_descending/`.
 
 **Run first for descending data.**
 
@@ -58,7 +58,7 @@ Extracts the zip files downloaded from HyP3 into their respective folders. Print
 Diagnostic script. Opens the first coherence TIF and prints the coordinate system (CRS), spatial extent, pixel size, and image dimensions. Confirms the data is in EPSG:32635 (WGS 1984 UTM Zone 35N) at 40m resolution.
 
 ### Check_coherence.py
-Diagnostic script. Crops the first coherence file to the Santorini bounding box and checks coherence statistics — minimum, maximum, mean, and number of pixels above 0.4 and 0.6 thresholds. Confirms the bounding box is correctly placed over the islands.
+Diagnostic script. Crops the first coherence file to the Santorini bounding box and checks coherence statistics - minimum, maximum, mean, and number of pixels above 0.4 and 0.6 thresholds. Confirms the bounding box is correctly placed over the islands.
 
 ### check_single_pair.py
 Diagnostic script. Extracts the vertical displacement value at Nea Kameni (caldera centre) for all interferogram pairs and prints them as a table. Used to inspect individual pair values and identify outliers caused by atmospheric noise.
