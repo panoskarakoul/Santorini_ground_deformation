@@ -4,7 +4,7 @@ import numpy as np
 import os
 from rasterio.windows import from_bounds
 
-RESULTS_DIR = r"C:\Projects\santorini_insar\hyp3_results"
+RESULTS_DIR = r"your_path"
 LEFT, RIGHT, BOTTOM, TOP = 348246, 366563, 4021554, 4040313
 
 corr_files = sorted(glob.glob(
