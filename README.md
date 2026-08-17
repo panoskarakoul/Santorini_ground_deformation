@@ -1,6 +1,6 @@
 [README (1).md](https://github.com/user-attachments/files/30929208/README.1.md)
 # Santorini InSAR — Ground Deformation Analysis
-### Sentinel-1 DInSAR Study of the 2024–2025 Volcanic Unrest
+### Sentinel-1 multi-temporal InSAR Study of the 2024–2025 Volcanic Unrest
 
 **Course:** GE7090 Advanced Remote Sensing  
 **University:** Stockholm University  
