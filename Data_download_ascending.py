@@ -7,9 +7,9 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 # ─── UPDATE THESE TWO LINES ───────────────────────────────────────────────────
-USERNAME = "panoskarakoul@gmail.com"
+USERNAME = "your_username_here"
 PASSWORD = "your_password_here"
-ROOT_DIR = r"C:\Projects\santorini_insar"
+ROOT_DIR = r"the_path_you_want_to_save_it"
 
 # ─── SETTINGS ─────────────────────────────────────────────────────────────────
 SETTINGS = {
